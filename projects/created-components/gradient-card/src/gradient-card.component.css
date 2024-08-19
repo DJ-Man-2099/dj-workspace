@@ -1,0 +1,156 @@
+.top {
+	position: relative;
+	border-radius: 20px;
+	padding: 2px !important;
+	border: 0 !important;
+}
+
+.top>.bg-white {
+	position: relative;
+	z-index: 5;
+	border-radius: calc(20px - 2px);
+	padding: 10px;
+}
+
+.bg-border {
+	/* filter: blur(2px); */
+	z-index: 5;
+	overflow: hidden;
+	border-radius: 20px;
+	position: absolute;
+	display: flex;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.bg-border::before {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	backdrop-filter: blur(10px);
+}
+
+.shadow {
+	z-index: 3;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	transform: translate3d(0px, 20px, 0) scale(0.99);
+	filter: blur(20px);
+	opacity: 0.7;
+	display: flex;
+}
+
+.left,
+.right {
+	height: 100%;
+	width: 50%;
+}
+
+.left {
+	background: linear-gradient(181deg, #ea0606, #dbea06, #ea5806, #d106ea);
+	background-size: 800% 800%;
+
+	-webkit-animation: leftGradient 30s ease infinite;
+	-moz-animation: leftGradient 30s ease infinite;
+	animation: leftGradient 30s ease infinite;
+}
+
+@-webkit-keyframes leftGradient {
+	0% {
+		background-position: 50% 0%
+	}
+
+	50% {
+		background-position: 50% 100%
+	}
+
+	100% {
+		background-position: 50% 0%
+	}
+}
+
+@-moz-keyframes leftGradient {
+	0% {
+		background-position: 50% 0%
+	}
+
+	50% {
+		background-position: 50% 100%
+	}
+
+	100% {
+		background-position: 50% 0%
+	}
+}
+
+@keyframes leftGradient {
+	0% {
+		background-position: 50% 0%
+	}
+
+	50% {
+		background-position: 50% 100%
+	}
+
+	100% {
+		background-position: 50% 0%
+	}
+}
+
+.right {
+	background: linear-gradient(0deg, #1c06ea, #3bea06, #06ea90, #06c2ea);
+	background-size: 800% 800%;
+
+	-webkit-animation: rightGradient 30s ease infinite;
+	-moz-animation: rightGradient 30s ease infinite;
+	animation: rightGradient 30s ease infinite;
+}
+
+@-webkit-keyframes rightGradient {
+	0% {
+		background-position: 50% 0%
+	}
+
+	50% {
+		background-position: 50% 100%
+	}
+
+	100% {
+		background-position: 50% 0%
+	}
+}
+
+@-moz-keyframes rightGradient {
+	0% {
+		background-position: 50% 0%
+	}
+
+	50% {
+		background-position: 50% 100%
+	}
+
+	100% {
+		background-position: 50% 0%
+	}
+}
+
+@keyframes rightGradient {
+	0% {
+		background-position: 50% 0%
+	}
+
+	50% {
+		background-position: 50% 100%
+	}
+
+	100% {
+		background-position: 50% 0%
+	}
+}
